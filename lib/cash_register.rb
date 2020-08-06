@@ -7,7 +7,7 @@
  end
  def add_item(item, price, quantity=1)
    self.total += (price * quantity)
-   quantity.items do self.items<< item
+   quantity.times do self.items<< item
  end
  self.last = {val: price * quantity, quantity: quantity};
  end
