@@ -5,9 +5,11 @@
    @discount = discount
    @items = []
  end
- def add_item(title, price, quantity=1)
+ def add_item(item, price, quantity=1)
    self.total += (price * quantity)
    quantity.times do self.cart<< items
+   
+   
    
    
    
