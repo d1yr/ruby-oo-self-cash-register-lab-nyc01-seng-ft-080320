@@ -6,18 +6,25 @@
    @items = []
  end
  def add_item(title, price, quantity=1)
-   @price = price
-   if quantity>1
-     i=0
-     while quantity>1
-     @items<< title
-     i+=1 
-   end
- else @items<< title
- end
- @total += price*quantity
- @total
-end 
+   
+   
+   
+   
+   
+   #@price = price
+   #if quantity>1
+    # i=0
+     #while quantity>1
+     #@items<< title
+     #i+=1 
+   #end
+ #else @items<< title
+ #end
+ #@total += price*quantity
+ #@total
+#end 
+
+
 def apply_discount()
   if discount > 0
     @discount = @discount/100.to_f
