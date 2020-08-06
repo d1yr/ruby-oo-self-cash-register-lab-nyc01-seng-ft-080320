@@ -17,7 +17,7 @@
    
    
    
-   @last_transaction = price
+   @last_transaction = last_transaction
    if quantity>1
      i=0
      while quantity>1
