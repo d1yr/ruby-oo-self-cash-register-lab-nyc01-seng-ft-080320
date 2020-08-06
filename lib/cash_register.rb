@@ -7,28 +7,28 @@
  end
  
  def add_item(item, price, quantity=1)
-   self.total += (price * quantity)
-   quantity.times do self.items<< item
- end
- self.last = {val: price * quantity, quantity: quantity};
- end
-   
-   
-   
-   
-   
-   #@price = price
-   #if quantity>1
-    # i=0
-     #while quantity>1
-     #@items<< title
-     #i+=1 
-   #end
- #else @items<< title
+   #self.total += (price * quantity)
+   #quantity.times do self.items<< item
  #end
- #@total += price*quantity
- #@total
-#end 
+ #self.last = {val: price * quantity, quantity: quantity};
+ #end
+   
+   
+   
+   
+   
+   @last_transaction = price
+   if quantity>1
+     i=0
+     while quantity>1
+     @items<< title
+     i+=1 
+   end
+ else @items<< title
+ end
+ @total += price*quantity
+ @total
+end 
 
 
 def apply_discount()
