@@ -9,7 +9,8 @@
    self.total += (price * quantity)
    quantity.times do self.cart<< items
  end
- self.last_transaction = (val: )
+ self.last = {val: price * quantity, quantity: quantity};
+ end
    
    
    
